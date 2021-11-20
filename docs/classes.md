@@ -146,7 +146,11 @@
 
 > STATIC <code>draw_rectangle(rect: rect_t, color: color_t, [rounding: number])</code>
 
-> STATIC <code>draw_rectangle_filled(rect: rect_t, color: color_t, [color_gradient: color_t], [rounding: number])</code>
+> STATIC <code>draw_rectangle_filled(rect: rect_t, color: color_t, [rounding: number])</code>
+
+> STATIC <code>draw_rectangle_filled(rect: rect_t, color: color_t, color_gradient: color_t, horizontal: boolean, [rounding: number])</code>- gradient
+
+
 
 > STATIC <code>draw_circle(position: point_t, radius: number, filled: boolean)</code>
 
