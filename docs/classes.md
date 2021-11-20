@@ -150,11 +150,18 @@
 
 > STATIC <code>draw_rectangle_filled(rect: rect_t, color: color_t, color_gradient: color_t, horizontal: boolean, [rounding: number])</code>- gradient
 
-
-
 > STATIC <code>draw_circle(position: point_t, radius: number, filled: boolean)</code>
 
 > STATIC <code>draw_image(rect: rect_t, texture: c_texture, [rounding: number])</code>
+
+
+## c_texture
+
+> <code>set_size(size: point_t)</code>
+
+> <code>scale_size(scale: float)</code>
+
+> <code>get_size(): point_t</code>
 
 
 ## font_t
