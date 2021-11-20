@@ -202,4 +202,51 @@
 
 ## gui
 
-> STATIC <code>create_tab(name: string): c_menu_tab</code>
+> STATIC <code>create_tab(title: string): c_menu_tab</code>
+
+
+## c_gui_element
+
+> <code>set_title(title: string)</code>
+
+> <code>get_title(): string</code>
+
+> <code>set_position(position: point_t)</code>
+
+> <code>get_position(): point_t</code>
+
+
+## c_variable_controller
+
+- <a href="#/classes?id=c_gui_element">c_gui_element</a>
+
+> <code>set_int()</code>
+
+> <code>set_float()</code>
+
+> <code>set_string()</code>
+
+> <code>set_color()</code>
+
+> <code>get_int(): number</code>
+
+> <code>get_float(): number</code>
+
+> <code>get_string(): number</code>
+
+> <code>get_color(): number</code>
+
+
+## c_gui_parent
+
+- <a href="#/classes?id=c_gui_element">c_gui_element</a>
+
+> <code>groupbox(title: string, position: point_t, size: point_t): c_groupbox</code>
+
+> <code>switchbox(title: string, margin_top: number): c_variable_controller</code>
+
+
+## c_groupbox
+
+- <a href="#/classes?id=c_gui_parent">c_gui_parent</a>
+
