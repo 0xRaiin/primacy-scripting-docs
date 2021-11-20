@@ -124,7 +124,7 @@
 
 > STATIC <code>get_screen_resolution(): point_t</code>
 
-> STATIC <code>set_rotation(degrees: number)</code>
+> STATIC <code>set_rotation(degrees: float)</code>
 
 > STATIC <code>pop_rotation()</code>
 
