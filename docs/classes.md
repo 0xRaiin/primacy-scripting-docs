@@ -142,7 +142,7 @@
 
 > STATIC <code>get_texture_png(archive: string, texture_name: string, path: string, size: point_t): c_texture</code>
 
-> STATIC <code>get_Texture_svg(archive: string, texture_name: string, path: string): c_texture</code>
+> STATIC <code>get_texture_svg(archive: string, texture_name: string, path: string): c_texture</code>
 
 
 ## math
