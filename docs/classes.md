@@ -136,7 +136,7 @@
 
 > STATIC <code>path_to(point: point_t)</code>
 
-> STATIC <code>path_stroke(color: color_t)</code>
+> STATIC <code>path_stroke(color: color_t, thickness: number)</code>
 
 > STATIC <code>path_fill(color: color_t)</code>
 
@@ -177,14 +177,17 @@
 
 > STATIC <code>calc_angle(src: vec3_t, dst: vec3_t): vec3_t</code>
 
+
 ## point_t
+
 > <p><code>x: number</code></p>
 > <p><code>y: number</code></p>
 
 
 ## vec3_t
+
 > <p><code>x: float</code></p>
 > <p><code>y: float</code></p>
 > <p><code>z: float</code></p>
 
-> STATIC <code>length(): float</code>
+> <code>length(): float</code>
