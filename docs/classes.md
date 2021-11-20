@@ -126,6 +126,6 @@
 
 
 ## font_t
-> <code>draw_text(position: point_t, [bounds_x: number], color: color_t, text: string, flags: e_textflags)</code> --bounds_x is optional. it decides when text will draw in a new line.
+> <code>draw(position: point_t, [bounds_x: number], color: color_t, text: string, flags: e_textflags)</code> --bounds_x is optional. it decides when text will draw in a new line.
 
 > <code>get_text_size(text: string, [bounds_x]): point_t</code> --bounds_x is optional. it decides when text will draw in a new line.
