@@ -25,11 +25,12 @@
 
 > <code>is_valid(): boolean</code>- return whether index is valid or not
 
+
 ## c_base_entity
 
-> STATIC <code>get_entity_from_id(): object</code>
+> STATIC <code>get_entity_from_id(): c_base_entity</code>
 
-> STATIC <code>get_entity_from_id(handle: c_base_handle): object</code>
+> STATIC <code>get_entity_from_id(handle: c_base_handle): c_base_entity</code>
 
 > <code>is_player(): boolean</code>
 
@@ -68,11 +69,11 @@
 
 - <a href="#/classes?id=c_base_entity">c_base_entity</a>
 
-> STATIC <code>get_player_from_id(): object</code>
+> STATIC <code>get_player_from_id(): c_base_player</code>
 
-> STATIC <code>get_player_from_id(handle: c_base_handle): object</code>
+> STATIC <code>get_player_from_id(handle: c_base_handle): c_base_player</code>
 
-> STATIC <code>get_local_player(): object</code>
+> STATIC <code>get_local_player(): c_base_player</code>
 
 > <code>is_valid(): boolean</code>- checks if player is alive and not dormant
 
@@ -101,6 +102,7 @@
 > <p><code>m_max_reserve_ammo: number [read-only]</code></p>
 > <p><code>m_range: float [read-only]</code></p>
 
+
 ## user_cmd_t
 
 > <p><code>m_command_number; number [read-only]</code></p>
@@ -117,15 +119,45 @@
 > <p><code>m_mousedy: short</code></p>
 > <p><code>m_hasbeenpredicted: boolean</code></p>
 
+
 ## render
-> STATIC <code>create_font(type_name: string, size: number, weight: number, flags: e_fontflags): object</code>
+
+> STATIC <code>create_font(type_name: string, size: number, weight: number, flags: e_fontflags): font_t</code>
 
 > STATIC <code>draw_rectangle(rect: rect_t, color: color_t, [rounding: number])</code>
 
-> STATIC <code>draw_rectangle_filled(rect: rect_t, color: color_t, [rounding: number])</code>
+> STATIC <code>draw_rectangle_filled(rect: rect_t, color: color_t, [color_gradient: color_t], [rounding: number])</code>
+
+> STATIC <code>draw_image(rect: rect_t, texture: c_texture, [rounding: number])</code>
 
 
 ## font_t
+
 > <code>draw(position: point_t, [bounds_x: number], color: color_t, text: string, flags: e_textflags)</code> --bounds_x is optional. it decides when text will draw in a new line.
 
 > <code>get_text_size(text: string, [bounds_x]): point_t</code> --bounds_x is optional. it decides when text will draw in a new line.
+
+
+## c_vpk
+
+> STATIC <code>get_texture_png(archive: string, texture_name: string, path: string, size: point_t): c_texture</code>
+
+> STATIC <code>get_Texture_svg(archive: string, texture_name: string, path: string): c_texture</code>
+
+
+## math
+
+> STATIC <code>world_to_screen(vec3_t world): point_t</code>
+
+
+## point_t
+> <p><code>x: number</code></p>
+> <p><code>y: number</code></p>
+
+
+## vec3_t
+> <p><code>x: float</code></p>
+> <p><code>y: float</code></p>
+> <p><code>z: float</code></p>
+
+> STATIC <code>length(): float</code>
