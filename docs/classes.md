@@ -136,7 +136,7 @@
 
 > STATIC <code>path_to(point: point_t)</code>
 
-> STATIC <code>path_stroke(color: color_t, thickness: number)</code>
+> STATIC <code>path_stroke(color: color_t, closed: boolean, thickness: number)</code>
 
 > STATIC <code>path_fill(color: color_t)</code>
 
