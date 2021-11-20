@@ -130,6 +130,8 @@
 
 > STATIC <code>draw_circle(position: point_t, radius: number, filled: boolean)</code>
 
+> STATIC <code>draw_image(rect: rect_t, texture: c_texture, [rounding: number])</code>
+
 
 ## font_t
 
@@ -147,8 +149,9 @@
 
 ## math
 
-> STATIC <code>world_to_screen(vec3_t world): point_t</code>
+> STATIC <code>world_to_screen(world: vec3_t): point_t</code>
 
+> STATIC <code>calc_angle(src: vec3_t, dst: vec3_t): vec3_t</code>
 
 ## point_t
 > <p><code>x: number</code></p>
