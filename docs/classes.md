@@ -122,6 +122,18 @@
 
 ## render
 
+> STATIC <code>get_screen_resolution(): point_t</code>
+
+> STATIC <code>set_rotation(degrees: number)</code>
+
+> STATIC <code>pop_rotation()</code>
+
+> STATIC <code>set_clip(rect: rect_t)</code>
+
+> STATIC <code>get_clip(): rect_t</code>
+
+> STATIC <code>pop_clip()</code>
+
 > STATIC <code>create_font(type_name: string, size: number, weight: number, flags: e_fontflags): font_t</code>
 
 > STATIC <code>draw_rectangle(rect: rect_t, color: color_t, [rounding: number])</code>
