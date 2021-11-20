@@ -134,6 +134,14 @@
 
 > STATIC <code>pop_clip()</code>
 
+> STATIC <code>path_to(point: point_t)</code>
+
+> STATIC <code>path_stroke(color: color_t)</code>
+
+> STATIC <code>path_fill(color: color_t)</code>
+
+> STATIC <code>path_end()</code>
+
 > STATIC <code>create_font(type_name: string, size: number, weight: number, flags: e_fontflags): font_t</code>
 
 > STATIC <code>draw_rectangle(rect: rect_t, color: color_t, [rounding: number])</code>
