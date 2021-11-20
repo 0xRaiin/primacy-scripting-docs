@@ -128,7 +128,7 @@
 
 > STATIC <code>draw_rectangle_filled(rect: rect_t, color: color_t, [color_gradient: color_t], [rounding: number])</code>
 
-> STATIC <code>draw_image(rect: rect_t, texture: c_texture, [rounding: number])</code>
+> STATIC <code>draw_circle(position: point_t, radius: number, filled: boolean)</code>
 
 
 ## font_t
