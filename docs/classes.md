@@ -191,3 +191,8 @@
 > <p><code>z: float</code></p>
 
 > <code>length(): float</code>
+
+
+## gui
+
+> STATIC <code>create_tab(name: string): c_menu_tab</code>
