@@ -3,4 +3,5 @@
 - [Lua Classes](/classes.md)
 - [Lua Enumenators](/enums.md)
 - [Lua Events](/events.md)
+- [Netvars](/netvars.md)
 - [Examples](/examples.md)

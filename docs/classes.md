@@ -26,11 +26,14 @@
 > <code>is_valid(): boolean</code>- return whether index is valid or not
 
 ## c_base_entity
+
 > STATIC <code>get_entity_from_id(): object</code>
 
 > STATIC <code>get_entity_from_id(handle: c_base_handle): object</code>
 
 > <code>is_player(): boolean</code>
+
+> <code>is_weapon(): boolean</code>
 
 > <code>is_dormant(): boolean</code>
 
@@ -88,6 +91,7 @@
 
 
 ## weapon_data_t
+
 > <p><code>m_weapon_name; string [read-only]</code></p>
 > <p><code>m_weapon_type: number [read-only]</code></p>
 > <p><code>m_world_model; string [read-only]</code></p>
@@ -112,3 +116,16 @@
 > <p><code>m_mousedx: short</code></p>
 > <p><code>m_mousedy: short</code></p>
 > <p><code>m_hasbeenpredicted: boolean</code></p>
+
+## render
+> STATIC <code>create_font(type_name: string, size: number, weight: number, flags: e_fontflags): object</code>
+
+> STATIC <code>draw_rectangle(rect: rect_t, color: color_t, [rounding: number])</code>
+
+> STATIC <code>draw_rectangle_filled(rect: rect_t, color: color_t, [rounding: number])</code>
+
+
+## font_t
+> <code>draw_text(position: point_t, [bounds_x: number], color: color_t, text: string, flags: e_textflags)</code> --bounds_x is optional. it decides when text will draw in a new line.
+
+> <code>get_text_size(text: string, [bounds_x]): point_t</code> --bounds_x is optional. it decides when text will draw in a new line.
