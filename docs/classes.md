@@ -216,27 +216,6 @@
 > <code>get_position(): point_t</code>
 
 
-## c_variable_controller
-
-- <a href="#/classes?id=c_gui_element">c_gui_element</a>
-
-> <code>set_int()</code>
-
-> <code>set_float()</code>
-
-> <code>set_string()</code>
-
-> <code>set_color()</code>
-
-> <code>get_int(): number</code>
-
-> <code>get_float(): number</code>
-
-> <code>get_string(): number</code>
-
-> <code>get_color(): number</code>
-
-
 ## c_gui_parent
 
 - <a href="#/classes?id=c_gui_element">c_gui_element</a>
@@ -245,8 +224,38 @@
 
 > <code>switchbox(title: string, margin_top: number): c_variable_controller</code>
 
+> <code>slider_int(title: string, min: number, max: number, margin_top: number): c_variable_controller</code>
+
+> <code>slider_float(title: string, min: float, max: float, margin_top: number): c_variable_controller</code>
+
 
 ## c_groupbox
 
 - <a href="#/classes?id=c_gui_parent">c_gui_parent</a>
 
+
+## c_switchbox
+
+- <a href="#/classes?id=c_gui_element">c_gui_element</a>
+
+> <code>set_value(value: boolean)</code>
+
+> <code>get_value(): boolean</code>
+
+
+## c_slider_int
+
+- <a href="#/classes?id=c_gui_element">c_gui_element</a>
+
+> <code>set_value(value: number)</code>
+
+> <code>get_value(): number</code>
+
+
+## c_slider_float
+
+- <a href="#/classes?id=c_gui_element">c_gui_element</a>
+
+> <code>set_value(value: float)</code>
+
+> <code>get_value(): float</code>
