@@ -238,6 +238,22 @@
 > <p><code>y: number</code></p>
 
 
+## points_t
+
+> <p><code>m_left: number</code></p>
+> <p><code>m_top: number</code></p>
+> <p><code>m_right: number</code></p>
+> <p><code>m_bottom: number</code></p>
+
+
+## rect_t
+
+> <p><code>m_position: point_t</code></p>
+> <p><code>m_size: point_t</code></p>
+> <p><code>m_points: points_t</code></p> -POINTS_t NOT POINT_T
+
+> <code>update_points()</code>
+
 ## vec3_t
 
 > <p><code>x: float</code></p>
@@ -261,6 +277,14 @@
 > <code>set_position(position: point_t)</code>
 
 > <code>get_position(): point_t</code>
+
+> <code>set_size(position: point_t)</code>
+
+> <code>get_size(): point_t</code>
+
+> <code>get_geometry_area(): <a href="#/classes?id=rect_t">rect_t</a></code>
+
+> <code>get_geometry_area_relative(): <a href="#/classes?id=rect_t">rect_t</a></code>
 
 
 ## c_gui_parent
