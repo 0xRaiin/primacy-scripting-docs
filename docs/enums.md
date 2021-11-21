@@ -32,3 +32,14 @@
 > <p><code>outline</code></p>
 
 
+## e_request_method
+
+> <p><code>get</code></p>
+> <p><code>head</code></p>
+> <p><code>post</code></p>
+> <p><code>put</code></p>
+> <p><code>delete</code></p>
+> <p><code>connect</code></p>
+> <p><code>options</code></p>
+> <p><code>trace</code></p>
+> <p><code>patch</code></p>
