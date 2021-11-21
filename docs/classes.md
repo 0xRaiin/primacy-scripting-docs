@@ -330,7 +330,7 @@
 ## user_data_t
 
 > <p><code>m_uid; number [read-only]</code></p>
-> <p><code>m_username: number [read-only]</code></p>
+> <p><code>m_username: string [read-only]</code></p>
 > <p><code>m_subscription: string [read-only]</code></p>
 
 ## cheat
