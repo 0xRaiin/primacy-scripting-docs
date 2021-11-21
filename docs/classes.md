@@ -249,7 +249,7 @@
 
 ## gui
 
-> STATIC <code>create_tab(title: string): c_menu_tab</code>
+> STATIC <code>create_tab(title: string): <a href="#/classes?id=c_gui_parent">c_gui_parent</a></code>
 
 
 ## c_gui_element
@@ -269,54 +269,51 @@
 
 - The titles are IMPORTANT for configs. Set a title for every element you create
 
-> <code>groupbox(title: string, position: point_t, [size: point_t]): c_groupbox</code>
+> <code>groupbox(title: string, position: point_t, [size: point_t]): <a href="#/classes?id=c_groupbox">c_groupbox</a></code>
 
-> <code>checkbox(title: string, [margin_top: number]): c_variable_controller</code>
+> <code>checkbox(title: string, [margin_top: number]): <a href="#/classes?id=c_variable_controller">c_variable_controller</a></code>
 
-> <code>switchbox(title: string, [margin_top: number]): c_variable_controller</code>
+> <code>switchbox(title: string, [margin_top: number]): <a href="#/classes?id=c_variable_controller">c_variable_controller</a></code>
 
-> <code>slider_int(title: string, min: number, max: number, [margin_top: number]): c_variable_controller</code>
+> <code>slider_int(title: string, min: number, max: number, [margin_top: number]): <a href="#/classes?id=c_variable_controller">c_variable_controller</a></code>
 
-> <code>slider_float(title: string, min: float, max: float, [margin_top: number]): c_variable_controller</code>
+> <code>slider_float(title: string, min: float, max: float, [margin_top: number]): <a href="#/classes?id=c_variable_controller">c_variable_controller</a></code>
 
-> <code>dropdown(title: string, options: { ... } string, [margin_top: number]): c_gui_selectable</code>
+> <code>dropdown(title: string, options: { ... } string, [margin_top: number]): <a href="#/classes?id=c_gui_selectable">c_gui_selectable</a></code>
 
-> <code>list_box(title: string, options: { ... } string, height: number): c_gui_selectable</code>
+> <code>list_box(title: string, options: { ... } string, height: number): <a href="#/classes?id=c_gui_selectable">c_gui_selectable</a></code>
 
-> <code>colorpicker(title: string, show_title: boolean, margin_top: number, margin_right: number): c_variable_controller</code>
+> <code>colorpicker(title: string, show_title: boolean, margin_top: number, margin_right: number): <a href="#/classes?id=c_variable_controller">c_variable_controller</a></code>
 
-> <code>text_box(title: string, margin_top: number): c_variable_controller</code>
+> <code>text_box(title: string, margin_top: number): <a href="#/classes?id=c_variable_controller">c_variable_controller</a></code>
 
 ## c_groupbox
 
 - <a href="#/classes?id=c_gui_parent">c_gui_parent</a>
 
 
-## c_switchbox
+## c_variable_controller
 
 - <a href="#/classes?id=c_gui_element">c_gui_element</a>
 
-> <code>set_value(value: boolean)</code>
+> <code>set_value(value)</code>
 
-> <code>get_value(): boolean</code>
+> <code>get_value()</code>
+
+
+## c_switchbox
+
+- <a href="#/classes?id=c_varaible_controller">c_varaible_controller</a>
 
 
 ## c_slider_int
 
-- <a href="#/classes?id=c_gui_element">c_gui_element</a>
-
-> <code>set_value(value: number)</code>
-
-> <code>get_value(): number</code>
+- <a href="#/classes?id=c_varaible_controller">c_varaible_controller</a>
 
 
 ## c_slider_float
 
-- <a href="#/classes?id=c_gui_element">c_gui_element</a>
-
-> <code>set_value(value: float)</code>
-
-> <code>get_value(): float</code>
+- <a href="#/classes?id=c_varaible_controller">c_varaible_controller</a>
 
 
 ## c_gui_selectable
@@ -351,7 +348,7 @@
 
 > <code>add_header(header: string)</code>
 
-> <code>send(force_https: boolean)</code>
+> <code>send(force_https: boolean): <a href="#/classes?id=http_response_t">http_response_t</a></code>
 
 
 ## http_response_t
