@@ -5,7 +5,7 @@
 
 ## ctx
 > <p><code>m_globals: c_global_vars</code></p>
-> <p><code>m_globals: c_global_vars</code></p>
+> <p><code>m_panorama: c_panorama_engine</code></p>
 
 
 ## color_t
