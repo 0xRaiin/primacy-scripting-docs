@@ -1,6 +1,11 @@
 ## client
 
-> STATIC <code>set_event_callback(event: string, callback: function)</code>
+> STATIC <code>set_event_callback(event: string, callback: function(...))</code>
+
+
+## ctx
+> <p><code>m_globals: c_global_vars</code></p>
+> <p><code>m_globals: c_global_vars</code></p>
 
 
 ## color_t
@@ -120,6 +125,21 @@
 > <p><code>m_hasbeenpredicted: boolean</code></p>
 
 
+## user_cmd_t
+
+> <p><code>m_realtime; float [read-only]</code></p>
+> <p><code>m_frame_count: number [read-only]</code></p>
+> <p><code>m_frame_time: float</code></p>
+> <p><code>m_curtime: float [read-only]</code></p>
+> <p><code>m_max_clients: number [read-only]</code></p>
+> <p><code>m_tick_count: number</code></p>
+> <p><code>m_interval_per_tick: number [read-only]</code></p>
+
+> <code>get_tick_rate(): number</code>
+
+> <code>get_frame_rate(): number</code>
+
+
 ## render
 
 > STATIC <code>get_screen_resolution(): point_t</code>
@@ -228,6 +248,9 @@
 
 > <code>slider_float(title: string, min: float, max: float, margin_top: number): c_variable_controller</code>
 
+> <code>dropdown(title: string, options: { ... } string, margin_top: number): c_gui_selectable</code>
+
+> <code>c_list_box(title: string, options: { ... } string, height: number, margin_top: number): c_gui_selectable</code>
 
 ## c_groupbox
 
@@ -259,3 +282,44 @@
 > <code>set_value(value: float)</code>
 
 > <code>get_value(): float</code>
+
+
+## c_gui_selectable
+
+- <a href="#/classes?id=c_gui_element">c_gui_element</a>
+
+> <code>set_input_callback(callback: function(index: number))</code>
+
+> <code>set_is_selected_callback(callback: function(index: number): boolean)</code>
+
+> <code>set_is_enabled(callback: function(index: number): boolean)</code>
+
+
+## user_data_T
+
+> <p><code>m_uid; number [read-only]</code></p>
+> <p><code>m_username: number [read-only]</code></p>
+> <p><code>m_subscruption: string [read-only]</code></p>
+
+## cheat
+
+> <code>get_user_data(): boolean</code>
+
+
+## c_http_request
+
+> <code>constructor(host: string, args: string, method: e_request_method)</code>
+
+> <code>constructor(url: string, method: e_request_method)</code>
+
+> <code>set_body(body: string)</code>
+
+> <code>add_header(header: string)</code>
+
+> <code>send(force_http: boolean)</code>
+
+
+## http_response_t
+
+> <p><code>m_status_code: number [read-only]</code></p>
+> <p><code>m_text: string [read-only]</code></p>
