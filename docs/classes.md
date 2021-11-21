@@ -126,7 +126,7 @@
 > <p><code>m_hasbeenpredicted: boolean</code></p>
 
 
-## user_cmd_t
+## c_global_vars
 
 > <p><code>m_realtime; float [read-only]</code></p>
 > <p><code>m_frame_count: number [read-only]</code></p>
