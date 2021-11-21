@@ -343,7 +343,7 @@
 
 > <code>add_header(header: string)</code>
 
-> <code>send(force_http: boolean)</code>
+> <code>send(force_https: boolean)</code>
 
 
 ## http_response_t
