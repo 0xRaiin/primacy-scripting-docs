@@ -6,7 +6,7 @@
 ## ctx
 > <p><code>m_globals: c_global_vars</code></p>
 > <p><code>m_engine: c_engine_client</code></p>
-> <p><code>m_panorama: c_panorama_engine</code></p>- didn't implement yet.
+> <p><code>m_panorama: c_panorama_engine</code>- didn't implement yet.</p>
 
 
 ## color_t
@@ -267,6 +267,8 @@
 
 - <a href="#/classes?id=c_gui_element">c_gui_element</a>
 
+- The titles are IMPORTANT for configs. Set a title for every element you create
+
 > <code>groupbox(title: string, position: point_t, size: point_t): c_groupbox</code>
 
 > <code>switchbox(title: string, margin_top: number): c_variable_controller</code>
@@ -277,7 +279,11 @@
 
 > <code>dropdown(title: string, options: { ... } string, margin_top: number): c_gui_selectable</code>
 
-> <code>c_list_box(title: string, options: { ... } string, height: number, margin_top: number): c_gui_selectable</code>
+> <code>list_box(title: string, options: { ... } string, height: number, margin_top: number): c_gui_selectable</code>
+
+> <code>colorpicker(title: string, margin_top: number): c_variable_controller</code>
+
+> <code>text_box(title: string, margin_top: number): c_variable_controller</code>
 
 ## c_groupbox
 
