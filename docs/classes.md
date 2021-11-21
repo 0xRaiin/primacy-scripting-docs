@@ -11,6 +11,11 @@
 
 ## color_t
 
+> <p><code>r: number</code></p>
+> <p><code>g: number</code></p>
+> <p><code>b: number</code></p>
+> <p><code>a: number</code></p>
+
 > <code>constructor()</code>- defaults to rgba(255, 255, 255, 255)
 
 > <code>constructor(r: number, g: number, b: number, [a: number])</code>
@@ -18,11 +23,6 @@
 > <code>interpolate(other_color: color_t, progress: float{ 0-1 })</code>- linear rgba transition from one color to another
 
 > <code>interpolate_hsv(other_color: color_t, progress: float{ 0-1 })</code>- linear hsv transition from one color to another
-
-> <p><code>r: number</code></p>
-> <p><code>g: number</code></p>
-> <p><code>b: number</code></p>
-> <p><code>a: number</code></p>
 
 
 ## c_base_handle
