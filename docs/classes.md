@@ -269,19 +269,21 @@
 
 - The titles are IMPORTANT for configs. Set a title for every element you create
 
-> <code>groupbox(title: string, position: point_t, size: point_t): c_groupbox</code>
+> <code>groupbox(title: string, position: point_t, [size: point_t]): c_groupbox</code>
 
-> <code>switchbox(title: string, margin_top: number): c_variable_controller</code>
+> <code>checkbox(title: string, [margin_top: number]): c_variable_controller</code>
 
-> <code>slider_int(title: string, min: number, max: number, margin_top: number): c_variable_controller</code>
+> <code>switchbox(title: string, [margin_top: number]): c_variable_controller</code>
 
-> <code>slider_float(title: string, min: float, max: float, margin_top: number): c_variable_controller</code>
+> <code>slider_int(title: string, min: number, max: number, [margin_top: number]): c_variable_controller</code>
 
-> <code>dropdown(title: string, options: { ... } string, margin_top: number): c_gui_selectable</code>
+> <code>slider_float(title: string, min: float, max: float, [margin_top: number]): c_variable_controller</code>
 
-> <code>list_box(title: string, options: { ... } string, height: number, margin_top: number): c_gui_selectable</code>
+> <code>dropdown(title: string, options: { ... } string, [margin_top: number]): c_gui_selectable</code>
 
-> <code>colorpicker(title: string, margin_top: number): c_variable_controller</code>
+> <code>list_box(title: string, options: { ... } string, height: number): c_gui_selectable</code>
+
+> <code>colorpicker(title: string, show_title: boolean, margin_top: number, margin_right: number): c_variable_controller</code>
 
 > <code>text_box(title: string, margin_top: number): c_variable_controller</code>
 
