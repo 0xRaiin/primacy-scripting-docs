@@ -330,7 +330,7 @@
 
 ## cheat
 
-> <code>get_user_data(): boolean</code>
+> <code>get_user_data(): user_data_t</code>
 
 
 ## c_http_request
