@@ -140,6 +140,21 @@
 > <code>get_frame_rate(): number</code>
 
 
+## c_engine_client
+
+> <code>connected_in_game(): boolean</code>
+
+> <code>is_taking_screenshot(): boolean</code>
+
+> <code>set_view_angles(angles: vec3_t)</code>
+
+> <code>get_view_angles(): vec3_t</code>
+
+> <code>is_voice_recording(): boolean</code>
+
+> <code>execute_cmd(command: string)</code>
+
+
 ## render
 
 > STATIC <code>get_screen_resolution(): point_t</code>
@@ -174,6 +189,17 @@
 
 > STATIC <code>draw_image(rect: rect_t, texture: c_texture, [rounding: number])</code>
 
+> STATIC <code>get_texture_file(path: string, size: point_t): c_texture</code>
+
+> STATIC <code>get_texture_file_svg(path: string): c_texture</code>
+
+> STATIC <code>get_texture_memory(key: string, data:string, size: point_t): c_texture</code>
+
+> STATIC <code>get_texture_memory_svg(key: string, data: string): c_texture</code>
+
+> STATIC <code>get_texture_by_key(key: string): c_texture</code>
+
+> STATIC <code>delete_cached_texture(key: string)</code>
 
 ## c_texture
 
@@ -295,7 +321,7 @@
 > <code>set_is_enabled(callback: function(index: number): boolean)</code>
 
 
-## user_data_T
+## user_data_t
 
 > <p><code>m_uid; number [read-only]</code></p>
 > <p><code>m_username: number [read-only]</code></p>
