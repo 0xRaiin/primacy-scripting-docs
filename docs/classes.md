@@ -307,7 +307,7 @@
 
 > <code>list_box(title: string, options: { ... } string, height: number): <a href="#/classes?id=c_gui_selectable">c_gui_selectable</a></code>
 
-> <code>colorpicker(title: string, show_title: boolean, margin_top: number, margin_right: number): <a href="#/classes?id=c_variable_controller">c_variable_controller</a></code>
+> <code>colorpicker(title: string, show_title: boolean, same_line: boolean margin_top: number, margin_right: number): <a href="#/classes?id=c_variable_controller">c_variable_controller</a></code>
 
 > <code>text_box(title: string, margin_top: number): <a href="#/classes?id=c_variable_controller">c_variable_controller</a></code>
 
