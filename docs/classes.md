@@ -3,10 +3,51 @@
 > STATIC <code>set_event_callback(event: string, callback: function(...))</code>
 
 
-## ctx
-> <p><code>m_globals: c_global_vars</code></p>
-> <p><code>m_engine: c_engine_client</code></p>
-> <p><code>m_panorama: c_panorama_engine</code>- didn't implement yet.</p>
+## core.
+> <p><code>m_globals: interface</code></p>
+> <p><code>m_engine: interface</code></p>
+> <p><code>m_panorama: interface</code></p>
+
+
+## core.m_global_vars
+
+> <code>get_real_time(): float</code>
+
+> <code>get_frame_count(): float</code>
+
+> <code>get_frame_time(): float</code>
+
+> <code>get_server_time(): float</code>
+
+> <code>get_max_clients(): number</code>
+
+> <code>get_tick_count(): number</code>
+
+> <code>get_interval_per_tick(): float</code>
+
+> <code>get_tick_rate(): number</code>
+
+> <code>get_frame_rate(): number</code>
+
+
+## core.m_engine
+
+> <code>connected_in_game(): boolean</code>
+
+> <code>is_taking_screenshot(): boolean</code>
+
+> <code>set_view_angles(angles: vec3_t)</code>
+
+> <code>get_view_angles(): vec3_t</code>
+
+> <code>is_voice_recording(): boolean</code>
+
+> <code>execute_cmd(command: string)</code>
+
+
+## core.m_panorama
+
+> <code>run_script(script: string)</code>
 
 
 ## color_t
@@ -124,36 +165,6 @@
 > <p><code>m_mousedx: short</code></p>
 > <p><code>m_mousedy: short</code></p>
 > <p><code>m_hasbeenpredicted: boolean</code></p>
-
-
-## c_global_vars
-
-> <p><code>m_realtime; float [read-only]</code></p>
-> <p><code>m_frame_count: number [read-only]</code></p>
-> <p><code>m_frame_time: float</code></p>
-> <p><code>m_curtime: float [read-only]</code></p>
-> <p><code>m_max_clients: number [read-only]</code></p>
-> <p><code>m_tick_count: number</code></p>
-> <p><code>m_interval_per_tick: number [read-only]</code></p>
-
-> <code>get_tick_rate(): number</code>
-
-> <code>get_frame_rate(): number</code>
-
-
-## c_engine_client
-
-> <code>connected_in_game(): boolean</code>
-
-> <code>is_taking_screenshot(): boolean</code>
-
-> <code>set_view_angles(angles: vec3_t)</code>
-
-> <code>get_view_angles(): vec3_t</code>
-
-> <code>is_voice_recording(): boolean</code>
-
-> <code>execute_cmd(command: string)</code>
 
 
 ## render
