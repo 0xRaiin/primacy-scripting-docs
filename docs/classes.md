@@ -362,15 +362,18 @@
 > <code>set_is_enabled(callback: function(index: number): boolean)</code>
 
 
-## user_data_t
-
-> <p><code>m_uid; number [read-only]</code></p>
-> <p><code>m_username: string [read-only]</code></p>
-> <p><code>m_subscription: string [read-only]</code></p>
-
 ## cheat
 
-> <code>get_user_data(): user_data_t</code>
+> <code>m_user_data: interface</code>
+
+
+## cheat.m_user_data
+
+> <code>m_user_data: interface</code>
+
+> <code>m_user_data: interface</code>
+
+> <code>m_user_data: interface</code>
 
 
 ## c_http_request
