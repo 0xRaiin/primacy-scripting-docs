@@ -369,11 +369,11 @@
 
 ## cheat.m_user_data
 
-> <code>m_user_data: interface</code>
+> <code>get_uid(): number</code>
 
-> <code>m_user_data: interface</code>
+> <code>get_username(): string</code>
 
-> <code>m_user_data: interface</code>
+> <code>get_subscription(): string</code>
 
 
 ## c_http_request
