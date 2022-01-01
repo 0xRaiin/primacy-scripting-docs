@@ -1,4 +1,4 @@
-## BUTTONS
+## e_buttons
 
 > <p><code>in_attack</code></p>
 > <p><code>in_attack2</code></p>
@@ -11,6 +11,17 @@
 > <p><code>in_moveleft</code></p>
 > <p><code>in_move_right</code></p>
 > <p><code>in_score</code></p>
+
+
+## e_frame_stages
+
+> <p><code>start</code></p>
+> <p><code>net_update_start</code></p>
+> <p><code>net_update_postdataupdate_start</code></p>
+> <p><code>net_update_postdataupdate_end</code></p>
+> <p><code>net_update_end</code></p>
+> <p><code>render_start</code></p>
+> <p><code>render_end</code></p>
 
 
 ## e_textflags

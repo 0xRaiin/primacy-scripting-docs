@@ -3,7 +3,7 @@
 > STATIC <code>set_event_callback(event: string, callback: function(...))</code>
 
 
-## core.
+## core
 > <p><code>m_globals: interface</code></p>
 > <p><code>m_engine: interface</code></p>
 > <p><code>m_panorama: interface</code></p>
@@ -50,6 +50,13 @@
 > <code>run_script(script: string)</code>
 
 
+## memory
+
+> <code>scan_pattern(module: string, pattern: string): number</code>- needs to be an IDA-style pattern
+
+> <code>get_v_func(address: number, index: number): number</code>
+
+
 ## color_t
 
 > <p><code>r: number</code></p>
@@ -66,14 +73,14 @@
 > <code>interpolate_hsv(other_color: color_t, progress: float{ 0-1 })</code>- linear hsv transition from one color to another
 
 
-## c_base_handle
+## c_handle
 
 > <code>get_index(): number</code>
 
 > <code>is_valid(): boolean</code>- return whether index is valid or not
 
 
-## c_base_entity
+## c_entity
 
 > STATIC <code>get_entity_from_id(): c_base_entity</code>
 
@@ -112,7 +119,7 @@
 > <code>set_prop_handle(field: string, value: handle)</code>
 
 
-## c_base_player
+## c_player
 
 - <a href="#/classes?id=c_base_entity">c_base_entity</a>
 
@@ -127,13 +134,13 @@
 > <code>is_enemy(): boolean</code>
 
 
-## c_base_weapon
+## c_weapon
 
 - <a href="#/classes?id=c_base_entity">c_base_entity</a>
 
 > STATIC <code>get_weapon_from_id(): object</code>
 
-> STATIC <code>get_weapon_from_id(handle: c_base_handle): object</code>
+> STATIC <code>get_weapon_from_handle(handle: c_base_handle): object</code>
 
 > <code>get_weapon_data(): weapon_data_t</code>
 
@@ -278,6 +285,7 @@
 
 > STATIC <code>create_tab(title: string): <a href="#/classes?id=c_gui_parent">c_gui_parent</a></code>
 
+> STATIC <code>get_element_traverse(title: string): <a href="#/classes?id=c_gui_element">c_gui_element</a></code>
 
 ## c_gui_element
 
@@ -304,51 +312,27 @@
 
 - The titles are IMPORTANT for configs. Set a title for every element you create
 
-> <code>groupbox(title: string, position: point_t, [size: point_t]): <a href="#/classes?id=c_groupbox">c_groupbox</a></code>
+> <code>groupbox(title: string, position: point_t, [size: point_t]): <a href="#/classes?id=c_gui_parent">c_gui_parent</a></code>
 
-> <code>checkbox(title: string, [margin_top: number]): <a href="#/classes?id=c_variable_controller">c_variable_controller</a></code>
+> <code>checkbox(title: string, [margin_top: number]): <a href="#/classes?id=c_gui_element">c_gui_element</a></code>
 
-> <code>switchbox(title: string, [margin_top: number]): <a href="#/classes?id=c_variable_controller">c_variable_controller</a></code>
+> <code>switchbox(title: string, [margin_top: number]): <a href="#/classes?id=c_gui_element">c_gui_element</a></code>
 
-> <code>slider_int(title: string, min: number, max: number, [margin_top: number]): <a href="#/classes?id=c_variable_controller">c_variable_controller</a></code>
+> <code>slider_int(title: string, min: number, max: number, [margin_top: number]): <a href="#/classes?id=c_gui_element">c_gui_element</a></code>
 
-> <code>slider_float(title: string, min: float, max: float, [margin_top: number]): <a href="#/classes?id=c_variable_controller">c_variable_controller</a></code>
+> <code>slider_float(title: string, min: float, max: float, [margin_top: number]): <a href="#/classes?id=c_gui_element">c_gui_element</a></code>
 
-> <code>dropdown(title: string, options: { ... } string, [margin_top: number]): <a href="#/classes?id=c_gui_selectable">c_gui_selectable</a></code>
+> <code>dropdown(title: string, options: { ... } string, [margin_top: number]): <a href="#/classes?id=c_gui_element">c_gui_element</a></code>
 
 > <code>list_box(title: string, options: { ... } string, height: number): <a href="#/classes?id=c_gui_selectable">c_gui_selectable</a></code>
 
-> <code>colorpicker(title: string, show_title: boolean, same_line: boolean margin_top: number, margin_right: number): <a href="#/classes?id=c_variable_controller">c_variable_controller</a></code>
+> <code>colorpicker(title: string, show_title: boolean, same_line: boolean margin_top: number, margin_right: number): <a href="#/classes?id=c_gui_element">c_variable_controller</a></code>
 
-> <code>text_box(title: string, margin_top: number): <a href="#/classes?id=c_variable_controller">c_variable_controller</a></code>
+> <code>text_box(title: string, margin_top: number): <a href="#/classes?id=c_gui_element">c_gui_element</a></code>
 
 ## c_groupbox
 
 - <a href="#/classes?id=c_gui_parent">c_gui_parent</a>
-
-
-## c_variable_controller
-
-- <a href="#/classes?id=c_gui_element">c_gui_element</a>
-
-> <code>set_value(value)</code>
-
-> <code>get_value()</code>
-
-
-## c_switchbox
-
-- <a href="#/classes?id=c_varaible_controller">c_varaible_controller</a>
-
-
-## c_slider_int
-
-- <a href="#/classes?id=c_varaible_controller">c_varaible_controller</a>
-
-
-## c_slider_float
-
-- <a href="#/classes?id=c_varaible_controller">c_varaible_controller</a>
 
 
 ## c_gui_selectable
