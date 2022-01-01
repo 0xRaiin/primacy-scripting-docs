@@ -305,6 +305,18 @@
 
 > <code>get_geometry_area_relative(): <a href="#/classes?id=rect_t">rect_t</a></code>
 
+> <code>set_value(title: any)</code>
+
+> <code>get_value_number(): number</code>
+
+> <code>get_value_float(): float</code>
+
+> <code>get_value_boolean(): boolean</code>
+
+> <code>get_value_color(): color_t</code>
+
+> <code>get_value_string(): string</code>
+
 
 ## c_gui_parent
 
